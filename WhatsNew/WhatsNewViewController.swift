@@ -85,6 +85,7 @@ public class WhatsNewViewController: UIViewController {
     public var buttonBorderColor: UIColor = .black {
         didSet {
             continueButton?.layer.borderColor = buttonBorderColor.cgColor
+            continueButton?.layer.borderWidth = 0.8
         }
     }
 
