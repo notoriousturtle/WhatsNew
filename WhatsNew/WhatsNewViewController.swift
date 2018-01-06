@@ -81,6 +81,12 @@ public class WhatsNewViewController: UIViewController {
             continueButton?.backgroundColor = buttonBackgroundColor
         }
     }
+    /// Background color of the button.
+    public var buttonBorderColor: UIColor = .black {
+        didSet {
+            continueButton?.layer.borderColor = buttonBorderColor.cgColor
+        }
+    }
 
     private let items: [WhatsNewItem]
     @IBOutlet private weak var titleLabel: UILabel!
