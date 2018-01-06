@@ -86,6 +86,8 @@ public class WhatsNewViewController: UIViewController {
         didSet {
             continueButton?.layer.borderColor = buttonBorderColor.cgColor
             continueButton?.layer.borderWidth = 0.8
+            continueButton?.layer.cornerRadius = 10
+            continueButton?.setTitleColor(buttonBorderColor, for: UIControlState())
         }
     }
 
